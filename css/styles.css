@@ -37,8 +37,25 @@ ul {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-
 }
+
+
+ 
+@media screen and (max-width: 1000px ) {
+  .goals-svg-wrap {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+}
+
 img {
   display: block;
   max-height: 100%;
@@ -50,6 +67,24 @@ img {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    width: 398px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1430px) {
+  .container {
+    width: 1158px;
+  }
 }
 
 .list {
@@ -278,23 +313,40 @@ header {
 }
 
 .goals {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
 
 .goals-title {
   font-weight: 500;
 }
 
 .ours-list {
-  display: flex;
+  /* display: flex; */
   margin-right: 24ox;
 }
+  
+@media screen and (min-width: 768px){
+  .ours-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+
 
 .goals-item {
   list-style: none;
-  margin-right: 24px;
+  /* margin-right: 24px; */
+}
+
+@media screen and (min-width: 320px) {
+  .goals-item {
+    margin-bottom: 72px;
+  }
 }
 
 .goals-list-title {
@@ -306,14 +358,33 @@ header {
   margin-bottom: 8px;
 }
 
+@media screen and (max-width: 767px) {
+  .goals-list-title {
+    text-align: center;
+  }
+}
+
 .goals-item-text {
-  max-width: 264px;
+  /* max-width: 264px; */
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-text);
 
-  width: 264px;
+  /* 
+  width: 264px; */
+}
+
+@media screen and (min-width: 320px) {
+  .goals-item-text {
+    width: 396px;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .goals-item-text {
+    max-width: 264px;
+  }
 }
 
 /* index.html SECTION WORCKS */
@@ -455,9 +526,43 @@ header {
 }
 .customers-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
 }
+
+@media screen and (min-width: 767px ) {
+  .customers-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1430px ) {
+  .customers-list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 0;
+  }
+  .customers-item {
+    margin-right: 24px;
+}
+}
+
+@media screen and (min-width: 1430px ) {
+  .customers-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  }
+
 .list {
 }
 .use-swg {
@@ -465,8 +570,11 @@ header {
   transition: fill 250ns ease;
 }
 .customers-item {
-  margin-right: 24px;
+  /* margin-right: 24px; */
+  margin-right: 16px;
+  margin-bottom: 72px;
 }
+
 
 .customers-link {
   border: 1px solid #8e8f99;
@@ -476,7 +584,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition:  border-radius 250ms linear;
+  transition: border-radius 250ms linear;
 }
 
 .customers-use-svg {
@@ -539,13 +647,13 @@ header {
   transition: background-color 250ms ease;
 }
 
-.button-svg:hover, 
+.button-svg:hover,
 .button-svg:focus {
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
-.button-svg:hover, 
+.button-svg:hover,
 .button-svg:focus {
-  background-color: #404BBF;
+  background-color: #404bbf;
 }
 
 .is-hidden {
@@ -567,7 +675,7 @@ header {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: #2E2F42;
+  color: #2e2f42;
   margin-top: 52px;
   margin-bottom: 16px;
 }
@@ -581,9 +689,8 @@ header {
   outline: transparent;
 }
 
-
 .modal-input:focus {
-  border-color: #4D5AE5;
+  border-color: #4d5ae5;
 }
 
 .modal-input:focus + .input-svg {
@@ -604,8 +711,6 @@ header {
   top: 50%;
   transform: translateY(-50%);
 }
-
-
 
 .modal-input::placeholder {
   color: red;
@@ -631,11 +736,11 @@ header {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 169px;
   height: 56px;
-  background: #4D5AE5;
-  border: 1px solid rgba(0, 0, 0, 0.1); 
+  background: #4d5ae5;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   margin-bottom: 4px;
@@ -648,7 +753,7 @@ header {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #8E8F99;
+  color: #8e8f99;
 }
 
 .textarea-model {
@@ -662,7 +767,6 @@ header {
 }
 
 .input-wrap-area {
- 
   margin-bottom: 16px;
 }
 
@@ -675,7 +779,7 @@ header {
 }
 
 .textarea-model:focus {
-  border-color: #4D5AE5;
+  border-color: #4d5ae5;
 }
 
 .checkbox-text {
@@ -685,7 +789,7 @@ header {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: #8E8F99;
+  color: #8e8f99;
   margin-bottom: 24px;
 }
 
@@ -701,9 +805,8 @@ header {
   fill: transparent;
 }
 
-
 .input-checked:checked + .checkbox-text span {
-  background-color: #404BBF;
+  background-color: #404bbf;
   border: none;
   fill: var(--color-white);
 }
@@ -712,11 +815,9 @@ header {
   border-color: #3441c7;
 }
 
-
 .checkbox-link-text {
-  color: #4D5AE5;
+  color: #4d5ae5;
 }
-
 
 /* index.html FOOTER */
 .web-footer {
@@ -755,7 +856,6 @@ header {
 }
 .footer-wrap {
   display: flex;
- 
 }
 
 .footer-wrap > *:first-child {
@@ -765,7 +865,6 @@ header {
 .footer-wrap > *:nth-child(2) {
   margin-right: 80px;
 }
-
 
 .logo-span-footer {
   color: var(--color-footer-text);
@@ -807,17 +906,15 @@ header {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer-input:focus {
-border-color: #404bbf;
-
-}  
-
+  border-color: #404bbf;
+}
 
 .footer-input {
-  background-color: #2E2F42;;
+  background-color: #2e2f42;
   border: 1px solid var(--color-white);
   width: 264px;
   height: 40px;
@@ -834,7 +931,7 @@ border-color: #404bbf;
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer-button:hover,
@@ -875,7 +972,7 @@ border-color: #404bbf;
 
 .footer-button span {
   margin-left: 16px;
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 
 /* index.html finish */
