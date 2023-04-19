@@ -292,15 +292,18 @@ header {
 
 .ours-list {
   display: flex;
-  margin-right: 24ox;
+  flex-wrap: wrap;
+  /* margin-right: 24ox; */
 }
 
 .goals-item {
   list-style: none;
-  margin-right: 24px;
+  margin-bottom: 72px;
+  /* margin-right: 24px; */
 }
 
 .goals-list-title {
+  text-align: center;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -310,13 +313,13 @@ header {
 }
 
 .goals-item-text {
-  max-width: 264px;
+  /* max-width: 264px; */
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-text);
-
-  width: 264px;
+  width: 396px;
+  
 }
 
 /* index.html SECTION WORCKS */
@@ -459,8 +462,10 @@ header {
 }
 .customers-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 16px;
 }
 .list {
 }
@@ -469,7 +474,7 @@ header {
   transition: fill 250ns ease;
 }
 .customers-item {
-  margin-right: 24px;
+  margin-bottom: 56px;
 }
 
 .customers-link {
@@ -1029,10 +1034,114 @@ ul.img-list.list li:nth-last-child(-n + 3) {
 
 @media screen and (min-width: 768px){
   .container {
-  max-width: 768px;
+    max-width: 768px;
   }
+}
+
+  @media screen and (min-width: 768px){
+    .our-tram {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 24px;
+    } 
+  }
+
+  @media screen and (min-width: 1158px){
+    .container {
+      max-width: 1158px;
+    }
+  }
+
+    @media screen and (min-width: 1158px){
+      .our-tram {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 24px;
+      }  
+    }
 
   .team-item {
     flex-basis: calc((100% - 30px) / 2);
   }
+
+   @media screen and (min-width: 768px){
+   .customers-list {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 24px;
+    } 
+  }
+
+    @media screen and (min-width: 1158px){
+   .customers-list {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      gap: 24px;
+    } 
+  }
+
+  @media screen and (max-width: 1157px){
+    .goals-svg-wrap {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+ }
 }
+
+
+ @media screen and (min-width: 768px){
+   .ours-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  
+}
+
+.goals-list-title {
+  text-align: left;
+
+}
+
+.goals-item-text {
+  /* max-width: 264px; */
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+  width: 356px;
+  
+}
+  }
+
+      @media screen and (min-width: 1158px){
+  .ours-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-right: 24ox; */
+  gap: 24px;
+}
+
+.goals-item-text {
+  /* max-width: 264px; */
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+  width: 264px;
+  
+}
+  }
+
+ 
+
