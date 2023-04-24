@@ -56,29 +56,36 @@
           </address>
         </div>
 
-      <button type="button" data-menu-open class="menu-open-btn">0</button>
+        <button type="button" data-menu-open class="menu-open-btn">
+         <svg width="32" heidth="22px" class="open-menu-svg">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+   
+        </button>
       </div>
-      <div class="mob-menu is-hidden"  data-menu>
+      <div class="mob-menu is-hidden" data-menu>
         <button type="button" data-menu-close class="button-svg">
           <svg width="8" height="8">
             <use href="./images/icons.svg#icon-close-svg" class="x-svg"></use>
           </svg>
         </button>
-       <div class="menu-wrp">
-        <nav class="menu-nav">
-          <ul class="mob-menu-list list">
-            <li class="mob-menu-item link">
-              <a href="./index.html" class="link-mob-menu link ">Studio</a>
-            </li>
-            <li class="mob-menu-item link">
-              <a href="./portfolio.html" class="link-mob-menu link">Portfolio</a>
-            </li>
-            <li class="mob-menu-item link">
-              <a href="" class="link-mob-menu link">Contacts</a>
-            </li>
-          </ul>
-        </nav> 
-       </div>
+        <div class="menu-wrp">
+          <nav class="menu-nav">
+            <ul class="mob-menu-list list">
+              <li class="mob-menu-item link">
+                <a href="./index.html" class="link-mob-menu link">Studio</a>
+              </li>
+              <li class="mob-menu-item link">
+                <a href="./portfolio.html" class="link-mob-menu link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mob-menu-item link">
+                <a href="" class="link-mob-menu link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
         <div class="address-menu-wrp">
           <address class="menu-soc-address">
             <ul class="menu-soc-list list">
@@ -269,6 +276,7 @@
           <ul class="our-tram list">
             <li class="team-item item">
               <img
+                srcset="./images/team-2x-1.jpg 2x"
                 src="./images/Mark-Guerrero.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -322,7 +330,7 @@
             </li>
 
             <li class="team-item item">
-              <img src="./images/Tom-Ford.jpg" alt="Tom Ford" width="264" />
+              <img  srcset="./images/team-2x-2.jpg 2x" src="./images/Tom-Ford.jpg" alt="Tom Ford" width="264" />
               <div class="info-wrap">
                 <h3 class="team-list-title">Tom Ford</h3>
                 <p class="team-list-text">Frontend Developer</p>
@@ -373,6 +381,7 @@
 
             <li class="team-item item">
               <img
+              srcset="./images/team-2x-3.jpg 2x"
                 src="./images/Camila-Garcia.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -427,6 +436,7 @@
 
             <li class="team-item item">
               <img
+              srcset="./images/team-2x-4.jpg 2x"
                 src="./images/Daniel-Wilson.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -711,8 +721,9 @@
                   <use
                     class="chekbox-use"
                     href="./images/icons.svg#icon-checkbox"
-                  ></use></svg>
-                </span>
+                  ></use>
+                </svg>
+              </span>
               I accept the terms and conditions of the
               <a href="" class="checkbox-link-text">Privacy Policy</a></label
             >
