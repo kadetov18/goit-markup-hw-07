@@ -1,4 +1,3 @@
-
 :root {
   --color-logo: #4d5ae5;
   --color-text: #434455;
@@ -65,21 +64,17 @@ img {
 }
 
 .container-header {
-  width: 100%;
-  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 .header-continer {
-  max-width: 1158px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .container {
-  width: 100%;
+  max-width: 1158px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -262,6 +257,10 @@ justify-content: space-between;
 
 .address-item {
   margin-right: 40px;
+}
+
+.address-item:last-child{
+  margin-right: 0;
 }
 
 .link-adsress {
@@ -1182,6 +1181,15 @@ ul.img-list.list li:nth-last-child(-n + 3) {
 
 
 
+@media screen and (min-width: 1158px) {
+  .header-continer { 
+   max-width: 1440px;
+   margin: 0 auto;
+   padding-left: 141px;
+   padding-right: 141px;
+  }
+ }
+
 @media screen and (min-width: 320px) and (max-width: 1199px) {
   .worck  {
     padding-bottom: 0;
@@ -1325,6 +1333,7 @@ ul.img-list.list li:nth-last-child(-n + 3) {
     flex-wrap: nowrap;
     gap: 24px;
   }
+
 }
 
 @media screen and (max-width: 767px) {
