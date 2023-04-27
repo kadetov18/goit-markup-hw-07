@@ -64,8 +64,8 @@ img {
 }
 
 .container-header {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .header-continer {
@@ -192,7 +192,6 @@ header {
 
 .svg-link-list-menu {
   display: flex;
-justify-content: space-between;
   gap: 56px;
 }
 .link-menu-soc {
@@ -1190,6 +1189,20 @@ ul.img-list.list li:nth-last-child(-n + 3) {
   }
  }
 
+
+
+ @media screen and (max-width: 767px) {
+  .hero-section { 
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .goals-list-title {
+    font-size: 36px;
+  }
+
+ }
+
 @media screen and (min-width: 320px) and (max-width: 1199px) {
   .worck  {
     padding-bottom: 0;
@@ -1240,12 +1253,21 @@ ul.img-list.list li:nth-last-child(-n + 3) {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-continer {
+    max-width: 768px;
+   
+  }
+
+}
+
 @media screen and (min-width: 428px) {
   .container {
     max-width: 428px;
   }
  .container-footer {
   max-width: 428px;
+  
    
   }
 }
@@ -1260,6 +1282,8 @@ ul.img-list.list li:nth-last-child(-n + 3) {
      
     }
 }
+
+
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .container-footer {
      padding-left: 108px;
@@ -1421,6 +1445,7 @@ ul.img-list.list li:nth-last-child(-n + 3) {
   }
 }
 
+
 @media screen and (max-width: 767px) {
   .team-item:last-child  {
   margin-bottom: 0;
@@ -1440,12 +1465,6 @@ ul.img-list.list li:nth-last-child(-n + 3) {
 }
 
 
-
-@media screen and (min-width: 768px) {
-  .goals-item  {
-  margin-bottom: 0;
-  }
-}
 
 
 @media screen and (max-width: 1157px) {
@@ -1616,6 +1635,13 @@ ul.img-list.list li:nth-last-child(-n + 3) {
     letter-spacing: 0.02em;
     color: var(--color-text);
     width: 264px;
+  }
+}
+
+
+@media screen and (min-width: 767px) and (max-width: 1199px)  {
+  .ours-list .goals-item:nth-last-child(-n+2)  {
+  margin-bottom: 0;
   }
 }
 
