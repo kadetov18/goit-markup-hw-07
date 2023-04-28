@@ -1470,7 +1470,13 @@ ul.img-list.list li:nth-last-child(-n + 3) {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 427px) {
+  .customers-item:last-child{
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 428px) and (max-width: 767px) {
   .customers-list  .customers-item:nth-last-child(-n+2) {
     margin-bottom: 0px;
   }
