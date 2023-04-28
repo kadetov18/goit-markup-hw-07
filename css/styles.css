@@ -13,14 +13,8 @@ body {
   color: var(--color-text);
 }
 
-section {
-  min-width: 448px;
-}
 
-
-
-
-.mob-menu {
+/* .mob-menu {
   min-width: 448px;
 }
 
@@ -29,7 +23,7 @@ footer {
 }
 header {
   min-width: 448px;
-}
+} */
 
 h1,
 h2,
@@ -466,7 +460,7 @@ header {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-text);
-  width: 396px;
+  max-width: 396px;
 }
 
 /* index.html SECTION WORCKS */
@@ -888,7 +882,9 @@ header {
   line-height: 1.17;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
-  margin-left: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .web-footer-text {
   max-width: 264px;
@@ -942,7 +938,7 @@ header {
 }
 
 .button-wrap {
-  width: 396px;
+  /* max-width: 396px; */
   /* display: flex;
   flex-wrap: wrap;
   width: 453px;
@@ -977,12 +973,12 @@ header {
   background-color: #2e2f42;
   border: 1px solid var(--color-white);
   /* width: 264px; */
-  width: 398px;
+  min-width: 290px;
   height: 40px;
   opacity: 0.3;
   border-radius: 4px;
   padding: 8px 0 8px 16px;
-  margin-right: 24px;
+  /* margin-right: 24px; */
   color: var(--color-footer-text);
   margin-bottom: 16px;
 }
@@ -1335,10 +1331,26 @@ ul.img-list.list li:nth-last-child(-n + 3) {
     font-size: 56px;
     line-height: 1.07;
   }
+
+  .logo-title-footer {
+    display: flex;
+    justify-content: left;
+  }
 }
 
-.team-item {
-  
+
+
+@media screen and (max-width: 767px) {
+  .button-wrap {
+    margin: 0 auto;
+    max-width: 290px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-input {
+   margin-right: 24px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1637,6 +1649,7 @@ ul.img-list.list li:nth-last-child(-n + 3) {
     width: 264px;
   }
 }
+
 
 
 @media screen and (min-width: 767px) and (max-width: 1199px)  {
